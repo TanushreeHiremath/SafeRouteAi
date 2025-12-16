@@ -1,0 +1,201 @@
+Street name,nearest metro station distance(in km),type of road,crime,nearest police chowki,population density,rape,Kidnapping & Abduction_Total,Acid attack,Assault on Women,Sexual Harassment,use of criminal force to women,Stalking,Other Assault on Women,district
+MG Road,0.2,major district road,150,0.8,25000,6,12,1,18,25,10,8,15,Central
+Brigade Road,0.5,commercial road,120,0.5,28000,4,10,0,15,20,8,6,12,Central
+Residency Road,0.3,major district road,110,1.0,22000,3,8,1,12,18,7,5,10,Central
+Church Street,0.4,commercial road,90,0.6,26000,2,6,0,10,15,5,4,8,Central
+Commercial Street,0.7,commercial road,180,0.3,30000,8,15,2,25,30,12,10,20,East
+Infantry Road,0.6,major district road,70,1.2,18000,2,5,0,8,12,4,3,6,Central
+Kasturba Road,0.4,major district road,60,0.9,20000,1,4,0,6,10,3,2,5,Central
+St. Marks Road,0.5,major district road,80,0.7,21000,3,7,1,9,14,5,4,7,Central
+Richmond Road,0.8,major district road,100,1.1,19000,4,9,1,11,16,6,5,9,Central
+Hosur Road,1.5,national highway,200,2.0,15000,10,20,3,30,35,15,12,25,South
+Electronic City,2.3,IT corridor,50,3.5,12000,1,3,0,5,8,2,1,3,South East
+Whitefield Main Road,1.8,IT corridor,70,2.8,13000,2,4,0,7,10,3,2,4,East
+Sarjapur Road,1.2,suburban road,40,1.5,14000,1,2,0,4,6,1,1,2,South East
+Bellandur Road,1.5,suburban road,60,2.0,15000,2,3,0,6,9,2,1,3,South East
+Koramangala 80 Feet Road,0.9,residential road,30,0.7,22000,1,2,0,3,5,1,1,2,South East
+Indiranagar 100 Feet Road,0.6,major district road,80,0.5,24000,3,6,1,9,12,4,3,6,East
+Jayanagar 4th Block,0.8,residential road,40,0.9,20000,1,2,0,4,6,1,1,2,South
+BTM Layout,1.1,residential road,50,1.2,18000,2,3,0,5,7,2,1,3,South
+HSR Layout,1.3,residential road,45,1.0,17000,1,2,0,4,6,1,1,2,South
+Old Airport Road,0.7,major district road,90,1.1,21000,3,5,1,8,11,3,2,5,Central
+Lavelle Road,0.4,commercial road,85,0.6,23000,3,6,1,8,12,4,3,6,Central
+Cunningham Road,0.5,major district road,75,0.8,20000,2,4,0,6,9,3,2,4,Central
+Race Course Road,0.3,major district road,65,0.7,22000,2,3,0,5,8,2,1,3,Central
+Queen's Road,0.6,major district road,55,1.0,19000,1,3,0,4,7,2,1,2,Central
+Dickenson Road,0.5,major district road,60,0.9,20000,2,4,0,5,8,2,1,3,Central
+Museum Road,0.4,major district road,50,0.7,21000,1,2,0,4,6,1,1,2,Central
+Palace Road,0.8,major district road,70,1.2,18000,2,5,0,6,9,3,2,4,Central
+Nrupathunga Road,0.7,major district road,80,1.1,19000,3,6,1,7,10,3,2,4,Central
+KG Road,0.6,major district road,90,1.0,20000,3,7,1,8,12,4,3,5,Central
+Sheshadri Road,0.5,major district road,60,0.8,21000,2,4,0,5,8,2,1,3,Central
+Subedar Chatram Road,0.9,major district road,70,1.3,18000,2,5,0,6,9,3,2,4,Central
+Magadi Road,1.2,major district road,100,1.5,16000,4,8,1,9,14,5,4,7,West
+West of Chord Road,1.0,major district road,90,1.4,17000,3,7,1,8,12,4,3,6,West
+Sankey Road,0.8,major district road,80,1.2,19000,3,6,1,7,11,3,2,5,West
+BEL Road,1.1,major district road,70,1.3,18000,2,5,0,6,9,2,1,4,West
+Sahakar Nagar Main Road,1.3,major district road,60,1.5,17000,2,4,0,5,8,2,1,3,West
+Bannerghatta Road,1.7,major district road,110,2.0,15000,5,10,1,12,18,6,5,8,South
+Begur Road,1.5,major district road,100,1.8,16000,4,9,1,10,15,5,4,7,South
+Hosur Main Road,1.8,major district road,120,2.2,14000,6,12,2,14,20,7,6,10,South
+Silk Board Junction Road,1.6,major district road,130,2.1,13000,7,13,2,15,22,8,7,11,South
+Sarjapur-Attibele Road,2.0,major district road,90,2.5,12000,3,6,1,8,12,3,2,5,South East
+Anekal Road,2.2,major district road,80,2.7,11000,2,5,0,7,10,2,1,4,South East
+Electronic City Phase 1 Road,2.5,major district road,70,3.0,10000,2,4,0,6,9,2,1,3,South East
+Bommanahalli Road,1.9,major district road,100,2.3,13000,4,8,1,9,14,4,3,6,South
+Kudlu Gate Road,1.8,major district road,90,2.2,14000,3,7,1,8,12,3,2,5,South
+Hosa Road,1.7,major district road,80,2.1,15000,3,6,1,7,11,2,1,4,South
+ITPL Main Road,1.6,major district road,70,2.0,13000,2,5,0,6,9,2,1,3,East
+Varthur Kodi Road,1.8,major district road,80,2.2,12000,3,6,1,7,10,2,1,4,East
+Kundalahalli Main Road,1.5,major district road,70,2.0,14000,2,5,0,6,9,2,1,3,East
+Brookefield Main Road,1.4,major district road,60,1.9,15000,2,4,0,5,8,1,1,2,East
+Kadugodi Road,1.7,major district road,70,2.1,13000,2,5,0,6,9,2,1,3,East
+Sarjapur Main Road,1.3,major district road,60,1.8,14000,2,4,0,5,8,1,1,2,South East
+Marathahalli-Sarjapur Road,1.5,major district road,70,2.0,13000,2,5,0,6,9,2,1,3,South East
+Bellandur Main Road,1.6,major district road,80,2.1,12000,3,6,1,7,10,2,1,4,South East
+Outer Ring Road (ORR),1.8,major district road,100,2.3,11000,4,8,1,9,14,4,3,6,South East
+Devarabeesanahalli Road,1.7,major district road,90,2.2,12000,3,7,1,8,12,3,2,5,South East
+27th Main Road HSR,1.2,residential road,50,1.5,16000,1,3,0,4,6,1,1,2,South
+17th Cross Road HSR,1.1,residential road,45,1.4,17000,1,2,0,3,5,1,1,1,South
+12th Main Road HSR,1.0,residential road,40,1.3,18000,1,2,0,3,5,1,1,1,South
+Bommanahalli-HSR Road,1.4,major district road,60,1.7,15000,2,4,0,5,8,2,1,3,South
+4th Block Jayanagar Main Road,0.8,residential road,40,0.9,20000,1,2,0,4,6,1,1,2,South
+9th Block Jayanagar Road,0.9,residential road,45,1.0,19000,1,2,0,4,6,1,1,2,South
+45th Cross Road Jayanagar,0.7,residential road,35,0.8,21000,1,1,0,3,5,1,0,1,South
+Bull Temple Road,0.6,major district road,50,0.7,22000,1,2,0,4,6,1,1,2,South
+Gandhi Bazaar Main Road,0.5,commercial road,70,0.6,23000,2,4,0,5,8,2,1,3,South
+Sampige Road,0.8,major district road,60,1.0,20000,2,3,0,5,7,2,1,2,West
+Margosa Road,0.7,major district road,55,0.9,21000,1,2,0,4,6,1,1,2,West
+8th Cross Road Malleswaram,0.6,residential road,40,0.8,22000,1,1,0,3,5,1,0,1,West
+Rajajinagar 1st Block Road,0.9,major district road,65,1.2,19000,2,4,0,5,8,2,1,3,West
+Dr. Rajkumar Road,1.0,major district road,70,1.3,18000,2,5,0,6,9,2,1,3,West
+Airport Road,1.2,major district road,80,1.5,17000,3,6,1,7,10,3,2,4,North
+Devanahalli Road,2.0,major district road,90,2.5,12000,3,7,1,8,12,3,2,5,North
+Ballari Road,1.8,major district road,100,2.3,13000,4,8,1,9,14,4,3,6,North
+Sadahalli Road,2.2,major district road,110,2.7,11000,5,9,1,10,15,5,4,7,North
+Thanisandra Main Road,1.5,major district road,80,2.0,14000,3,6,1,7,10,2,1,4,North
+Nagawara Ring Road,1.6,major district road,85,2.1,13000,3,6,1,7,11,2,1,4,North
+Hennur-Bagalur Road,1.7,major district road,90,2.2,12000,3,7,1,8,12,3,2,5,North
+Horamavu Main Road,1.4,major district road,75,1.9,15000,2,5,0,6,9,2,1,3,North
+Banaswadi Main Road,1.3,major district road,70,1.8,16000,2,4,0,5,8,2,1,3,North
+Kalyan Nagar Main Road,1.2,major district road,65,1.7,17000,2,4,0,5,8,2,1,3,North
+Commercial Street Ext,0.8,commercial road,100,0.7,24000,4,8,1,9,14,4,3,6,Central
+Brigade Road Ext,0.7,commercial road,90,0.6,25000,3,7,1,8,12,3,2,5,Central
+Residency Road Ext,0.6,major district road,80,0.8,23000,3,6,1,7,11,2,1,4,Central
+Lavelle Road Ext,0.5,commercial road,85,0.7,24000,3,7,1,8,12,3,2,5,Central
+Vittal Mallya Road,0.4,commercial road,95,0.6,26000,4,8,1,9,14,4,3,6,Central
+Nandi Durga Road,1.0,major district road,70,1.2,20000,2,5,0,6,9,2,1,3,West
+Palace Guttahalli Road,0.9,major district road,65,1.1,21000,2,4,0,5,8,2,1,3,West
+Cubbon Road,0.7,major district road,60,0.9,22000,2,3,0,4,7,1,1,2,Central
+Museum Road Ext,0.6,major district road,55,0.8,23000,1,2,0,4,6,1,1,2,Central
+St. Joseph's Road,0.5,major district road,50,0.7,24000,1,2,0,3,5,1,1,1,Central
+NICE Road,2.5,expressway,40,3.5,8000,1,2,0,3,5,1,0,1,Peripheral
+Peripheral Ring Road,2.3,major district road,50,3.3,9000,1,3,0,4,6,1,1,2,Peripheral
+Satellite Town Ring Road,2.1,major district road,60,3.1,10000,2,4,0,5,8,2,1,3,Peripheral
+Hennur-Bagalur Road Ext,2.0,major district road,70,3.0,11000,2,5,0,6,9,2,1,3,North
+Yelahanka-Doddaballapur Road,2.2,major district road,80,3.2,10000,3,6,1,7,10,2,1,4,North
+100 Feet Road Indiranagar,0.6,major district road,80,0.5,24000,3,6,1,9,12,4,3,6,East
+80 Feet Road Koramangala,0.7,major district road,70,0.6,23000,2,5,0,8,11,3,2,5,South East
+6th Main Road HAL 2nd Stage,0.8,major district road,60,0.7,22000,2,4,0,7,10,2,1,4,East
+16th Cross Road Malleswaram,0.5,residential road,40,0.6,24000,1,2,0,4,6,1,1,2,West
+5th Block Road Koramangala,0.7,residential road,50,0.8,22000,1,3,0,5,7,2,1,3,South East
+Peenya Industrial Area Road,1.8,industrial road,90,2.2,10000,3,7,1,8,12,3,2,5,North West
+Yeshwanthpur Industrial Road,1.7,industrial road,85,2.1,11000,3,6,1,7,11,2,1,4,North West
+Jalahalli Main Road,1.6,industrial road,80,2.0,12000,2,5,0,6,9,2,1,3,North West
+Tumkur Road Industrial Stretch,1.9,industrial road,95,2.3,9000,4,8,1,9,14,4,3,6,North West
+Nagasandra Road,1.5,major district road,75,1.9,13000,2,6,0,7,10,2,1,4,North West
+Dasarahalli Main Road,1.4,major district road,70,1.8,14000,2,5,0,6,9,2,1,3,North West
+Mathikere Main Road,1.3,major district road,65,1.7,15000,2,4,0,5,8,2,1,3,North West
+Rajajinagar 6th Block Road,1.2,major district road,60,1.6,16000,1,3,0,4,7,1,1,2,North West
+Vijayanagar Main Road,1.1,major district road,55,1.5,17000,1,2,0,3,6,1,1,2,North West
+Chandra Layout Road,1.0,major district road,50,1.4,18000,1,2,0,3,5,1,1,2,North West
+Kengeri Upanagara Road,1.3,major district road,60,1.7,15000,2,4,0,5,8,2,1,3,South West
+RR Nagar Main Road,1.4,major district road,65,1.8,14000,2,5,0,6,9,2,1,3,South West
+Kumbalgodu Road,1.6,major district road,70,2.0,13000,2,6,0,7,10,2,1,4,South West
+Uttarahalli Main Road,1.5,major district road,65,1.9,14000,2,5,0,6,9,2,1,3,South West
+BSK 6th Stage Road,1.7,major district road,75,2.1,12000,3,6,1,7,11,2,1,4,South West
+Anjanapura Main Road,1.8,major district road,80,2.2,11000,3,7,1,8,12,3,2,5,South West
+JP Nagar 7th Phase Road,1.6,major district road,70,2.0,13000,2,6,0,7,10,2,1,4,South
+Banashankari 6th Stage Road,1.5,major district road,65,1.9,14000,2,5,0,6,9,2,1,3,South
+HSR Sector 7 Road,1.4,major district road,60,1.8,15000,2,4,0,5,8,2,1,3,South
+Bommasandra Industrial Road,1.9,industrial road,85,2.3,10000,3,7,1,8,12,3,2,5,South East
+Adugodi Main Road,1.2,major district road,70,1.5,16000,2,5,0,6,9,2,1,3,South
+Ejipura Main Road,1.1,major district road,65,1.4,17000,2,4,0,5,8,2,1,3,South East
+Viveknagar Main Road,1.0,major district road,60,1.3,18000,1,3,0,4,7,1,1,2,South East
+Austin Town Main Road,0.9,major district road,55,1.2,19000,1,2,0,3,6,1,1,2,East
+Richards Town Road,0.8,major district road,50,1.1,20000,1,2,0,3,5,1,1,2,East
+Cooke Town Road,0.7,major district road,45,1.0,21000,1,1,0,2,4,1,0,1,East
+Benson Town Road,0.6,major district road,40,0.9,22000,1,1,0,2,4,1,0,1,East
+Cox Town Main Road,0.5,major district road,35,0.8,23000,1,1,0,2,3,1,0,1,East
+Frazer Town Main Road,0.4,commercial road,60,0.7,24000,2,4,0,5,8,2,1,3,East
+Shivajinagar Main Road,0.3,commercial road,80,0.6,25000,3,6,1,7,11,3,2,5,East
+Johnson Market Road,0.5,commercial road,70,0.7,23000,2,5,0,6,9,2,1,3,Central
+Commercial Street Ext. Road,0.6,commercial road,75,0.8,22000,3,6,1,7,10,2,1,4,Central
+Brigade Road Ext. Lane,0.4,commercial road,85,0.6,24000,3,7,1,8,12,3,2,5,Central
+Residency Road Cross,0.5,major district road,65,0.7,23000,2,5,0,6,9,2,1,3,Central
+Lavelle Road Ext. Lane,0.3,commercial road,90,0.5,25000,4,8,1,9,14,4,3,6,Central
+Vittal Mallya Road Ext.,0.4,commercial road,95,0.6,26000,4,9,1,10,15,5,4,7,Central
+UB City Access Road,0.2,commercial road,100,0.4,27000,5,10,1,11,16,5,4,8,Central
+Avenue Road,0.2,major district road,66,0.8,27081,4,9,1,13,17,6,5,11,Central
+CMH Road,0.9,major district road,40,2.0,18666,3,5,1,8,10,4,3,6,East
+Old Madras Road,1.9,national highway,115,1.0,15363,7,15,2,22,30,11,9,19,East
+Mysore Road,1.9,national highway,86,2.2,20905,6,11,1,17,22,8,7,14,West
+Tumkur Road,1.7,national highway,104,1.7,20614,7,13,2,20,27,10,8,17,West
+Kanakapura Road,1.0,national highway,86,1.6,20453,6,11,1,17,22,8,7,14,South
+Kamaraj Road,0.8,major district road,62,0.8,27571,4,8,1,12,16,6,5,10,Central
+Miller's Road,0.6,major district road,40,0.7,26925,3,5,1,8,10,4,3,6,Central
+Wheeler Road,0.5,major district road,55,0.8,25698,4,7,1,11,14,5,4,9,Central
+Tannery Road,0.5,major district road,62,0.8,26163,4,8,1,12,16,6,5,10,Central
+Pottery Road,0.5,major district road,46,1.0,26637,3,6,1,9,12,4,4,7,Central
+Mosque Road,0.9,major district road,62,1.1,26484,4,8,1,12,16,6,5,10,Central
+Promenade Road,0.4,major district road,66,0.9,27405,4,9,1,13,17,6,5,11,Central
+Jayamahal Road,0.7,major district road,55,1.1,29243,4,7,1,11,14,5,4,9,Central
+Langford Road,0.6,major district road,43,0.7,27664,3,6,1,8,11,4,3,7,Central
+Commissariat Road,0.3,major district road,52,1.0,28675,3,7,1,10,14,5,4,8,Central
+Mission Road,0.3,major district road,58,0.9,29304,4,7,1,11,15,6,5,9,Central
+KH Road (Double Road),0.7,major district road,53,0.6,25475,3,7,1,10,14,5,4,9,Central
+SJP Road,0.3,major district road,42,1.2,29680,3,5,1,8,11,4,3,7,Central
+Link Road Malleswaram,1.5,major district road,69,1.9,20606,4,9,1,13,18,7,6,11,West
+Palace Cross Road,0.9,commercial road,81,0.7,28976,5,10,1,16,21,8,7,13,Central
+Dickenson Road Cross,0.3,commercial road,57,0.9,27950,4,7,1,11,15,5,5,9,Central
+Madras Bank Road,0.6,major district road,51,0.9,25856,3,7,1,10,13,5,4,8,Central
+Ulsoor Road,0.6,major district road,65,1.0,27330,4,8,1,13,17,6,5,11,Central
+Trinity Church Road,0.5,major district road,42,0.9,28997,3,5,1,8,11,4,3,7,Central
+Hoodi Main Road,0.3,residential road,32,0.6,29657,2,4,1,6,8,3,3,5,Central
+Suranjandas Road,1.6,major district road,66,1.4,15614,4,9,1,13,17,6,5,11,East
+New BEL Road,0.7,major district road,62,0.7,28872,4,8,1,12,16,6,5,10,Central
+Hesaraghatta Main Road,1.7,residential road,33,1.3,21289,2,4,1,6,9,3,3,5,North
+Hebbal Main Road,1.2,residential road,37,1.1,17549,2,5,1,7,9,4,3,6,North
+Jakkur Main Road,1.9,residential road,32,1.5,16034,2,4,1,6,8,3,3,5,North
+Yelahanka Main Road,1.7,residential road,37,1.6,17683,2,5,1,7,9,4,3,6,North
+Sanjaynagar Main Road,1.7,residential road,20,1.5,21553,1,3,0,4,5,2,2,3,North
+RMV Second Stage Main Road,2.0,residential road,35,1.8,17634,2,4,1,7,9,3,3,6,North
+RT Nagar Main Road,0.9,residential road,36,2.0,21659,2,5,1,7,9,3,3,6,North
+Thanisandra Main,0.9,major district road,38,1.7,19460,2,5,1,7,10,4,3,6,North
+Kothanur Main Road,0.8,residential road,32,1.5,19803,2,4,1,6,8,3,3,5,North
+Horamavu-Agara Main Road,1.2,residential road,24,1.5,20778,2,3,0,5,6,2,2,4,East
+Ramamurthy Nagar Main Road,1.2,residential road,32,2.1,18096,2,4,1,6,8,3,3,5,East
+KR Puram Main Road,0.9,residential road,19,2.2,20469,1,2,0,4,5,2,2,3,East
+Tin Factory Road,1.1,major district road,38,2.0,21155,2,5,1,7,10,4,3,6,East
+KR Road (Krishna Rajendra Road),0.9,major district road,42,1.0,25532,3,5,1,8,11,4,3,7,Central
+NR Road (Narasimha Raja Road),0.3,major district road,63,1.1,28251,4,8,1,12,17,6,5,10,Central
+SV Road (Swami Vivekananda Road),0.4,major district road,62,0.6,25145,4,8,1,12,16,6,5,10,Central
+DVG Road,0.3,major district road,46,1.1,28884,3,6,1,9,12,4,4,7,Central
+Sajjan Rao Road,0.2,major district road,42,0.5,28282,3,5,1,8,11,4,3,7,Central
+Vani Vilas Road,0.6,major district road,67,1.1,25258,4,9,1,13,17,7,5,11,Central
+Pampa Mahakavi Road,0.8,major district road,59,0.5,26193,4,8,1,11,15,6,5,9,Central
+KR Circle Road,0.8,major district road,62,1.0,29005,4,8,1,12,16,6,5,10,Central
+Seshadripuram Main Road,1.8,residential road,27,1.0,19887,2,4,0,5,7,3,2,4,West
+Malleswaram 15th Cross,0.3,commercial road,73,0.9,26009,5,9,1,14,19,7,6,12,Central
+Malleshwaram Circle Road,0.6,major district road,51,1.1,28726,3,7,1,10,13,5,4,8,Central
+Kumara Krupa Road,0.7,major district road,38,0.6,25776,2,5,1,7,10,4,3,6,Central
+Race Course Cross Road,0.7,commercial road,82,1.2,26354,5,11,1,16,21,8,7,13,Central
+Kasturba Road Cross,0.2,commercial road,50,0.9,28058,3,6,1,10,13,5,4,8,Central
+Cubbon Park Road,0.8,major district road,50,1.0,25211,3,6,1,10,13,5,4,8,Central
+Residency Cross Road,0.3,commercial road,65,0.6,25865,4,8,1,13,17,6,5,11,Central
+Richmond Town Main Road,0.5,residential road,22,1.0,29901,1,3,0,4,6,2,2,4,Central
+Langford Town Main Road,0.6,residential road,22,0.6,28182,1,3,0,4,6,2,2,4,Central
+Infantry Cross Road,0.4,commercial road,73,0.9,29731,5,9,1,14,19,7,6,12,Central
+St. John's Church Road,0.7,major district road,42,1.2,28499,3,5,1,8,11,4,3,7,Central
+St. John's Road,0.6,major district road,65,0.8,25742,4,8,1,13,17,6,5,11,Central
+St. John's Church Road Ext,0.3,major district road,66,0.6,27371,4,9,1,13,17,6,5,11,Central

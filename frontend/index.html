@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SafeRoute AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Mapbox -->
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.css"
+    rel="stylesheet"
+  />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.js"></script>
+</head>
+<body>
+  <!-- ================= AUTH OVERLAY ================= -->
+  <div id="auth-overlay" class="auth-overlay">
+    <div class="auth-card">
+      <h1 class="logo">SafeRoute <span>AI</span></h1>
+      <p class="auth-subtitle">
+        Sign in to discover safer paths, powered by crime data &amp; AI.
+      </p>
+
+      <div class="auth-toggle">
+        <button class="auth-toggle-btn active" data-auth="login">Login</button>
+        <button class="auth-toggle-btn" data-auth="signup">Sign Up</button>
+      </div>
+
+      <form id="login-form" class="auth-form">
+        <label>Email</label>
+        <input id="login-email" type="email" placeholder="you@example.com" required />
+
+        <label>Password</label>
+        <input id="login-password" type="password" placeholder="••••••••" required />
+
+        <button type="submit" class="primary-btn">Login</button>
+      </form>
+
+      <form id="signup-form" class="auth-form hidden">
+        <label>Name</label>
+        <input id="signup-name" type="text" placeholder="Your name" required />
+
+        <label>Email</label>
+        <input id="signup-email" type="email" placeholder="you@example.com" required />
+
+        <label>Password</label>
+        <input id="signup-password" type="password" placeholder="Create a password" required />
+
+        <button type="submit" class="primary-btn">Create Account</button>
+      </form>
+
+      <p class="auth-hint">
+        * Connects to Flask at <code>http://localhost:5000/api/auth</code>.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <h1>SafeRoute AI</h1>
+        <p>
+          A women-centric navigation assistant that uses past crime data,
+          live weather, and AI models to recommend safer routes.
+        </p>
+        <div class="hero-badges">
+          <span>Decision Tree</span>
+          <span>Random Forest</span>
+          <span>Mapbox</span>
+          <span>OpenWeather</span>
+        </div>
+      </div>
+      <div class="hero-stat-card">
+        <h2>Safety Levels</h2>
+        <div class="level-row">
+          <span class="dot dot-red"></span>
+          <span>1 – 2.5</span>
+          <span class="level-label">Unsafe</span>
+        </div>
+        <div class="level-row">
+          <span class="dot dot-amber"></span>
+          <span>2.5 – 3.5</span>
+          <span class="level-label">Moderate</span>
+        </div>
+        <div class="level-row">
+          <span class="dot dot-green"></span>
+          <span>3.5 – 5</span>
+          <span class="level-label">Very Safe</span>
+        </div>
+        <p class="hero-note">
+          Scores are calculated from your dataset: crime counts, distance to
+          metro &amp; police, population density, and more.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN (TABS & PANELS) ================= -->
+  <main class="main">
+    <!-- Tabs -->
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="weather-tab">
+        🌦 Live Weather
+      </button>
+      <button class="tab-btn" data-tab="route-tab">
+        🧭 Find Your Route
+      </button>
+      <button class="tab-btn" data-tab="live-safety-tab">
+        📍 Live Location Safety
+      </button>
+    </nav>
+
+    <!-- -------- WEATHER TAB -------- -->
+    <section id="weather-tab" class="tab-panel active">
+      <div class="card-grid">
+        <div class="card">
+          <h2>Current Weather</h2>
+          <p class="muted">
+            Weather affects safety: low visibility and late nights can reduce
+            scores slightly.
+          </p>
+
+          <div class="weather-form">
+            <label>Location / Area</label>
+            <input
+              id="weather-location"
+              type="text"
+              placeholder="e.g. Jayanagar, Bengaluru"
+            />
+
+            <button id="weather-btn" class="primary-btn">
+              Get Weather
+            </button>
+          </div>
+
+          <div id="weather-result" class="weather-result muted">
+            Weather info will appear here.
+          </div>
+        </div>
+
+        <div class="card soft-card">
+          <h2>How Weather Affects Safety</h2>
+          <ul class="soft-list">
+            <li>Night-time routes slightly lower the safety score.</li>
+            <li>Heavy rain or thunderstorms may also reduce safety.</li>
+            <li>
+              These adjustments are applied on top of your crime-based scores.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------- ROUTE TAB -------- -->
+    <section id="route-tab" class="tab-panel">
+      <div class="route-layout">
+        <!-- Left panel -->
+        <div class="route-left card">
+          <h2>Find Your Route</h2>
+          <p class="muted">
+            Enter your source and destination. All possible routes will be
+            scored using your dataset columns.
+          </p>
+
+          <label>Source</label>
+          <input
+            id="source-input"
+            type="text"
+            placeholder="e.g. MG Road, Bengaluru"
+          />
+
+          <label>Destination</label>
+          <input
+            id="dest-input"
+            type="text"
+            placeholder="e.g. Electronic City, Bengaluru"
+          />
+
+          <div class="route-options">
+            <div>
+              <label>City Dataset</label>
+              <select id="city-select">
+                <option value="bengaluru">Bengaluru</option>
+                <option value="delhi">Delhi</option>
+              </select>
+            </div>
+            <div>
+              <label>Weather Sensitivity</label>
+              <select id="weather-weight">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+          </div>
+
+          <button id="find-routes-btn" class="primary-btn full">
+            Show Safe Routes
+          </button>
+
+          <div id="routes-list" class="routes-list">
+            <!-- Route cards injected by JS -->
+          </div>
+
+          <div class="bottom-actions">
+            <button id="feedback-btn" class="ghost-btn">
+              📝 Route Feedback
+            </button>
+            <button id="sos-btn" class="sos-btn">
+              SOS
+            </button>
+          </div>
+        </div>
+
+        <!-- Right panel -->
+        <div class="route-right card">
+          <div class="map-header">
+            <h2>Map View</h2>
+            <p class="muted">
+              All routes are drawn with colors based on their safety score.
+              Click a route card to highlight it.
+            </p>
+          </div>
+          <div id="map" class="map"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------- LIVE SAFETY TAB -------- -->
+    <section id="live-safety-tab" class="tab-panel">
+      <div class="card-grid">
+        <div class="card">
+          <h2>Live Location Safety Score</h2>
+          <p class="muted">
+            We use your location and nearby streets (within a radius you pick)
+            to calculate a safety score from your crime dataset.
+          </p>
+
+          <label>Radius</label>
+          <select id="radius-select">
+            <option value="5">5 km</option>
+            <option value="10">10 km</option>
+          </select>
+
+          <button id="live-safety-btn" class="primary-btn">
+            Use My Current Location
+          </button>
+
+          <div id="live-safety-result" class="live-safety-result muted">
+            Safety score will appear here.
+          </div>
+        </div>
+
+        <div class="card soft-card">
+          <h2>Dataset Columns Used</h2>
+          <p class="muted">
+            The live safety score is influenced by these columns:
+          </p>
+          <ul class="soft-list two-cols">
+            <li>Street name</li>
+            <li>Nearest metro station distance (km)</li>
+            <li>Type of road</li>
+            <li>Crime (total index)</li>
+            <li>Nearest police chowki (km)</li>
+            <li>Population density</li>
+            <li>Rape</li>
+            <li>Kidnapping &amp; Abduction_Total</li>
+            <li>Acid attack</li>
+            <li>Assault on Women</li>
+            <li>Sexual Harassment</li>
+            <li>Use of criminal force to women</li>
+            <li>Stalking</li>
+            <li>Other Assault on Women</li>
+            <li>District</li>
+            <li>Safety (label/score)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FEEDBACK MODAL ================= -->
+  <div id="feedback-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-card">
+      <button id="close-feedback" class="modal-close">&times;</button>
+
+      <h2>Route Feedback</h2>
+      <p class="muted">
+        Your rating (1–5) and selected issue type will help improve route safety
+        scores for future users. Thank you for contributing.
+      </p>
+
+      <form id="feedback-form" class="feedback-form">
+        <!-- Rating -->
+        <div class="form-group">
+          <label for="feedback-rating">Safety Rating (1 = Unsafe, 5 = Very Safe)</label>
+          <select id="feedback-rating" required>
+            <option value="">Select Rating</option>
+            <option value="1">1 - Very Unsafe</option>
+            <option value="2">2 - Unsafe</option>
+            <option value="3">3 - Moderate</option>
+            <option value="4">4 - Safe</option>
+            <option value="5">5 - Very Safe</option>
+          </select>
+        </div>
+
+        <!-- Street name (optional unless rating <= 3) -->
+        <div class="form-group">
+          <label for="feedback-street">Where did you feel unsafe?</label>
+          <input
+            id="feedback-street"
+            type="text"
+            placeholder="Example: MG Road near Metro Station"
+          />
+        </div>
+
+        <!-- Issue type (optional unless rating <= 3) -->
+        <div class="form-group">
+          <label for="feedback-issue">Issue Type</label>
+          <select id="feedback-issue">
+            <option value="">Select an Issue</option>
+            <option value="stalking">Stalking / Following</option>
+            <option value="harassment">Verbal / Sexual Harassment</option>
+            <option value="assault_on_women">Physical Assault</option>
+            <option value="kidnapping_abduction">Kidnapping / Abduction Attempt</option>
+            <option value="use_of_criminal_force">Use of Criminal Force</option>
+            <option value="acid_attack_threat">Acid Attack Threat</option>
+            <option value="other_assault">Other Assault on Women</option>
+          </select>
+        </div>
+
+        <!-- Comments -->
+        <div class="form-group">
+          <label for="feedback-comments">Additional Comments (optional)</label>
+          <textarea
+            id="feedback-comments"
+            rows="3"
+            placeholder="Share time, location details, and what happened..."
+          ></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="primary-btn full-width">
+          Submit Feedback
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Expose MAPBOX_TOKEN to app.js -->
+  <script>
+    const MAPBOX_TOKEN = "pk.eyJ1IjoidGFudXNocmVlMTIzNCIsImEiOiJjbWRrYnllZjAwdmExMmxwa2t6cWEwbHlkIn0.THXI5SuOhmaQ8iMLQpiWXA";
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
